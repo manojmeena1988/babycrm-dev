@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>babyCRM</title>
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/style/css/layout.css" />
+  </head>
+
+  <body class="logged-out env-production page-responsive f4 intent-mouse">
+    <div class="position-relative js-header-wrapper">
+      <header
+        class="Header-old header-logged-out js-details-container Details position-relative f4 py-2"
+        role="banner"
+      >
+        <div class="container-xl d-lg-flex flex-items-center p-responsive">
+          <div class="d-flex flex-justify-between flex-items-center">
+            <a class="mr-4" href="" aria-label="Homepage">
+              <img
+                src="assets/images/cartoon-baby-007.png"
+                width="48px"
+                alt=""
+              />
+            </a>
+
+            <div class="d-flex flex-items-center">
+              <a
+                href="#"
+                class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              >
+                Sign&nbsp;up
+              </a>
+
+              <button
+                class="btn-link d-lg-none mt-1 js-details-target"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+              >
+                <svg
+                  height="24"
+                  class="octicon octicon-three-bars text-white"
+                  viewBox="0 0 12 16"
+                  version="1.1"
+                  width="18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto"
+          >
+            <div
+              class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3"
+            >
+              <button
+                class="btn-link js-details-target"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+              >
+                <svg
+                  height="24"
+                  class="octicon octicon-x text-gray"
+                  viewBox="0 0 12 16"
+                  version="1.1"
+                  width="18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+              <ul class="d-lg-flex list-style-none">
+                <li
+                  class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center"
+                >
+                  <details
+                    class="HeaderMenu-details details-overlay details-reset width-full"
+                  >
+                    <summary
+                      class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block"
+                    >
+                      Why babyCRM?
+                      <svg
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 14 8"
+                        xml:space="preserve"
+                        fill="none"
+                        class="icon-chevon-down-mktg position-absolute position-lg-relative"
+                      >
+                        <path d="M1,1l6.2,6L13,1"></path>
+                      </svg>
+                    </summary>
+                    <div
+                      class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4"
+                    >
+                      <a
+                        href="#"
+                        class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover"
+                        data-ga-click="(Logged out) Header, go to Features"
+                        >Features
+                        <span
+                          class="Bump-link-symbol float-right text-normal text-gray-light"
+                          >→</span
+                        ></a
+                      >
+                      <ul class="list-style-none f5 pb-3">
+                        <li class="edge-item-fix">
+                          <a
+                            href="#"
+                            class="py-2 lh-condensed-ultra d-block link-gray no-underline f5"
+                            data-ga-click="(Logged out) Header, go to Code review"
+                            >Code review</a
+                          >
+                        </li>
+                        <li class="edge-item-fix">
+                          <a
+                            href="#"
+                            class="py-2 lh-condensed-ultra d-block link-gray no-underline f5"
+                            data-ga-click="(Logged out) Header, go to Project management"
+                            >Project management</a
+                          >
+                        </li>
+                      </ul>
+
+                      <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                        <li class="edge-item-fix">
+                          <a
+                            href="#"
+                            class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"
+                            data-ga-click="(Logged out) Header, go to Customer stories"
+                            >Customer stories
+                            <span
+                              class="Bump-link-symbol float-right text-normal text-gray-light"
+                              >→</span
+                            ></a
+                          >
+                        </li>
+                        <li class="edge-item-fix">
+                          <a
+                            href="#"
+                            class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"
+                            data-ga-click="(Logged out) Header, go to Security"
+                            >Security
+                            <span
+                              class="Bump-link-symbol float-right text-normal text-gray-light"
+                              >→</span
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </li>
+              </ul>
+            </nav>
+
+            <div
+              class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left"
+            >
+              <a href="#" class="HeaderMenu-link no-underline mr-3">
+                Sign&nbsp;in
+              </a>
+              <a
+                href="#"
+                class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+              >
+                Sign&nbsp;up
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="application-main">
+      <main>
+        <div class="py-6 py-sm-8 jumbotron-codelines">
+          <div
+            class="js-experiment-homepage-signup-container-xl p-responsive position-relative container-lg"
+          >
+            <div class="d-md-flex flex-items-center gutter-md-spacious">
+              <div class="col-md-7 text-center text-md-left">
+                <h1 class="h000-mktg text-white lh-condensed-ultra mb-3">
+                  <img
+                    src="assets/images/cartoon-baby-007.png"
+                    alt=""
+                    style="width: 80px; transform: translateY(6px);"
+                  />
+                  babyCRM
+                </h1>
+                <p class="lead-mktg mb-4">
+                  A relationshipt management plateform so easy to use - even
+                  babies can do it! Signup and start sending tailored emails and
+                  text messages in just a minutes deeping relationships,
+                  creating opportunities and increasing sales.
+                </p>
+              </div>
+
+              <div class="mx-auto col-sm-8 col-md-6 hide-sm">
+                <div
+                  class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md-3 px-lg-4"
+                >
+                  <!-- '"` -->
+                  <!-- </textarea></xmp> -->
+                  <form
+                    class="home-hero-signup text-gray-dark js-signup-form js-signup-form-submit"
+                    autocomplete="off"
+                    action=""
+                    method="post"
+                  >
+                    <dl class="form-group">
+                      <dt class="input-label">
+                        <label class="form-label h5" for="user[email]"
+                          >Email</label
+                        >
+                      </dt>
+                      <dd>
+                        <input
+                          type="text"
+                          name="user[email]"
+                          id="user[email]"
+                          class="form-control form-control-lg input-block js-email-notice-trigger"
+                          autocomplete="off"
+                          spellcheck="false"
+                          aria-describedby="input-check-7675"
+                        />
+                      </dd>
+                    </dl>
+                    <dl class="form-group">
+                      <dt class="input-label">
+                        <label class="form-label h5" for="user[password]"
+                          >Password</label
+                        >
+                      </dt>
+                      <dd>
+                        <input
+                          type="password"
+                          name="user[password]"
+                          id="user[password]"
+                          class="form-control form-control-lg input-block"
+                          autocomplete="new-password"
+                        />
+                        <p class="form-control-note text-gray-dark">
+                          Make sure it's
+                          <span data-more-than-n-chars=""
+                            >at least 15 characters</span
+                          >
+                          OR
+                          <span data-min-chars="">at least 8 characters</span>
+                          <span data-number-requirement=""
+                            >including a number</span
+                          >
+                          <span data-letter-requirement=""
+                            >and a lowercase letter</span
+                          >.
+                        </p>
+                      </dd>
+                    </dl>
+
+                    <button
+                      type="submit"
+                      class="btn-mktg btn-primary-mktg btn-large-mktg f4 btn-block my-3 js-add-experiment-labels-to-ga-click"
+                    >
+                      Sign up for babyCRM
+                    </button>
+                    <p class="form-control-note mb-0 mt-3">
+                      By clicking “Sign up for babyCRM”, you agree to our
+                      <a
+                        class=""
+                        href="https://help.github.com/terms"
+                        target="_blank"
+                        >Terms of Service</a
+                      >
+                      and
+                      <a
+                        class=""
+                        href="https://help.github.com/privacy"
+                        target="_blank"
+                        >Privacy Statement</a
+                      >.
+                      <span class="js-email-notice"
+                        >We’ll occasionally send you account related
+                        emails.</span
+                      >
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-responsive pt-7 pt-md-12 pb-6 pb-md-9 home-enterprise-wrapper"
+        >
+          <div class="container-xl px-lg-4">
+            <div
+              class="d-lg-flex mx-auto p-4 p-md-7 bg-white rounded-2 box-shadow-large home-enterprise"
+            >
+              <div
+                class="d-none d-md-block position-absolute right-0 top-0 z-3"
+                style="width: 150px; transform: translateY(-89px);"
+              >
+                <img
+                  src="assets/images/cartoon-baby-007.png"
+                  style="width: 100px;"
+                />
+              </div>
+
+              <div class="col-lg-4 text-center text-lg-left my-3">
+                <h2 class="h1-mktg lh-condensed mb-3">babyCRM</h2>
+                <p class="f3 text-gray mr-lg-6">
+                  Choose a plan that suits your needs, start for free and
+                  upgrade when you need more.
+                </p>
+              </div>
+              <div
+                class="d-flex flex-wrap flex-md-nowrap flex-justify-center flex-lg-justify-end col-lg-8"
+              >
+                <div
+                  class="col-12 col-sm-6 col-md-5 d-flex flex-column flex-justify-between flex-items-center text-center p-3"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 48 49"
+                      fill="none"
+                      class="mb-2"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.6797 36.9274V34.3863C21.6797 34.3863 21.6724 33.7008 22.0494 33.1215C21.5238 33.0825 18.21 32.751 18.21 28.8196C18.21 27.3001 19.1252 26.3431 19.1252 26.3431C19.1252 26.3431 18.8805 25.4767 18.9788 24.4822C19.1095 23.1602 21.5564 24.6609 21.5564 24.6609C21.5564 24.6609 23.471 23.9548 26.281 24.6609C26.5293 24.3575 28.7146 22.9573 28.9395 24.3929C29.009 24.8369 28.8458 26.3431 28.8458 26.3431C28.8458 26.3431 29.6206 27.1288 29.626 28.8442C29.6369 32.2357 25.8261 33.1215 25.8261 33.1215C25.8261 33.1215 26.1856 33.7757 26.172 34.3863C26.1585 34.997 26.172 37 26.172 37C26.172 37 29.8169 35.8847 31.5674 33.0498C32.4044 31.6944 33 30.1179 33 28.1846C33 25.2995 31.8249 23.2014 30.5001 21.7971C28.7136 19.9033 26.2658 19 24 19C21.7525 19 19.2387 19.9239 17.4121 21.8971C16.0278 23.3925 15 25.507 15 28.1846C15 30.2112 15.7011 32.1298 16.7732 33.5648C18.6151 36.0301 21.6797 36.9274 21.6797 36.9274Z"
+                        stroke="#2088FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M11 48H3C1.89543 48 1 47.1046 1 46V20C1 18.8954 1.89543 18 3 18H6L11 18"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5.01172 23H10.0117"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M5.01367 28H10.0137"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M34 36.9989C34 36.4466 33.5523 35.9989 33 35.9989C32.4477 35.9989 32 36.4466 32 36.9989H34ZM33 48V49C33.5523 49 34 48.5523 34 48H33ZM27 48H26C26 48.5523 26.4477 49 27 49V48ZM27 44.8636H28C28 44.3114 27.5523 43.8636 27 43.8636V44.8636ZM21 44.8636V43.8636C20.4477 43.8636 20 44.3114 20 44.8636H21ZM21 48V49C21.5523 49 22 48.5523 22 48H21ZM15 48H14C14 48.5523 14.4477 49 15 49V48ZM16 37.0243C16 36.472 15.5523 36.0243 15 36.0243C14.4477 36.0243 14 36.472 14 37.0243H16ZM14 19.0122C14 19.5645 14.4477 20.0122 15 20.0122C15.5523 20.0122 16 19.5645 16 19.0122H14ZM18 9.22727L18.4262 10.1319C18.4447 10.1232 18.463 10.1139 18.4809 10.104L18 9.22727ZM33 1H34C34 0.646647 33.8135 0.319526 33.5095 0.139506C33.2054 -0.0405132 32.8289 -0.0467031 32.5191 0.123224L33 1ZM32 19.0219C32 19.5741 32.4477 20.0219 33 20.0219C33.5523 20.0219 34 19.5741 34 19.0219H32ZM32 36.9989V48H34V36.9989H32ZM33 47H27V49H33V47ZM28 48V44.8636H26V48H28ZM27 43.8636H21V45.8636H27V43.8636ZM20 44.8636V48H22V44.8636H20ZM21 47H15V49H21V47ZM16 48V37.0243H14V48H16ZM16 19.0122V14.4545H14V19.0122H16ZM16 14.4545C16 12.4615 17.1989 10.7101 18.4262 10.1319L17.5738 8.32265C15.5679 9.2677 14 11.7773 14 14.4545H16ZM18.4809 10.104L33.4809 1.87678L32.5191 0.123224L17.5191 8.3505L18.4809 10.104ZM32 1V19.0219H34V1H32Z"
+                        fill="#2088FF"
+                      ></path>
+                      <path
+                        d="M36 21L37.0597 20.2052L40 18L47 24V46C47 47.1046 46.1046 48 45 48H37"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M38.0137 30.0078H43.0137"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M38.0156 35.0078H43.0156"
+                        stroke="#79B8FF"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+
+                    <h3 class="h4-mktg">Enterprise</h3>
+                    <p class="f5 text-gray">
+                      Deploy to your environment or the cloud.
+                    </p>
+                  </div>
+                  <a
+                    class="btn-mktg mb-1 d-block d-md-inline-block text-center mt-2"
+                    href="#"
+                    >Start a free trial</a
+                  >
+                </div>
+                <div
+                  class="col-12 col-sm-6 col-md-5 d-flex flex-column flex-justify-between flex-items-center text-center p-3"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 76 76"
+                      fill="none"
+                      class="mb-2"
+                    >
+                      <path
+                        d="M10 8.572c-.79 0-1.429.64-1.429 1.429v25.714c0 .789.64 1.428 1.429 1.428h8.571c.282 0 .558.084.792.24l6.35 4.234v-3.045c0-.789.64-1.429 1.43-1.429h4.285a1.429 1.429 0 0 1 0 2.858h-2.857v4.285a1.429 1.429 0 0 1-2.221 1.189L18.138 40H10a4.286 4.286 0 0 1-4.286-4.286V10A4.286 4.286 0 0 1 10 5.715h47.142A4.286 4.286 0 0 1 61.428 10v14.285a1.429 1.429 0 0 1-2.857 0V10.001c0-.79-.64-1.429-1.429-1.429H10zM44.77 37.915a14.238 14.238 0 0 1 9.515-3.629c3.662 0 7.005 1.38 9.532 3.645a1.429 1.429 0 0 1-1.907 2.128 11.38 11.38 0 0 0-7.625-2.916 11.381 11.381 0 0 0-7.61 2.903 1.428 1.428 0 1 1-1.904-2.13zM67.05 64.707a1.428 1.428 0 0 1 2.017.105c1.982 2.2 3.334 4.873 3.774 7.81a1.429 1.429 0 0 1-2.826.423c-.348-2.33-1.427-4.496-3.07-6.32a1.429 1.429 0 0 1 .105-2.017zM63.947 55.745c.528.586.481 1.49-.105 2.017a14.238 14.238 0 0 1-9.557 3.667h-.003c-.914 0-1.812.069-2.685.2-6.79 1.022-12.035 5.786-13.048 11.48a1.429 1.429 0 0 1-2.813-.502c1.059-5.948 5.707-10.788 11.755-12.894a14.324 14.324 0 0 1-2.726-1.918 1.429 1.429 0 0 1 1.905-2.13 11.38 11.38 0 0 0 7.614 2.907h.001c2.94 0 5.619-1.109 7.645-2.933a1.428 1.428 0 0 1 2.017.105z"
+                        fill="#79B8FF"
+                      ></path>
+                      <path
+                        d="M36.168 14.326a1.429 1.429 0 0 1 .956 1.78L32.817 30.43a1.428 1.428 0 1 1-2.736-.823l4.307-14.324a1.429 1.429 0 0 1 1.78-.957zM25.296 17.562a1.429 1.429 0 0 1 0 2.02l-3.276 3.276 3.276 3.275a1.429 1.429 0 1 1-2.02 2.02l-4.286-4.285a1.429 1.429 0 0 1 0-2.02l4.285-4.286a1.429 1.429 0 0 1 2.02 0z"
+                        fill="#2188FF"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M40.28 40.01c.752.048 1.548.277 2.075.984.49.656.498 1.451.502 1.808v.06c-.003 1.02-.002 2.65 0 4.291v.012c.001 1.598.003 3.206 0 4.268v.044c-.001.174-.002.438-.036.695-.037.29-.128.693-.393 1.08-.593.863-1.584 1.037-2.431 1.034-3.792-.002-7.14-3.178-7.14-7.143 0-2.798 1.668-5.203 3.982-6.377 2.6-7.114 9.429-12.194 17.447-12.194 8.017 0 14.845 5.08 17.447 12.194 2.314 1.174 3.981 3.58 3.981 6.377 0 2.798-1.667 5.203-3.981 6.377-2.293 6.271-7.869 10.96-14.65 11.985A2.144 2.144 0 0 1 52.857 65v-.928c0-.67.544-1.215 1.214-1.215h.215c.223 0 .446-.004.667-.013 5.824-.243 10.832-3.658 13.337-8.564-.777-.037-1.62-.26-2.146-1.028a2.437 2.437 0 0 1-.394-1.08 5.674 5.674 0 0 1-.036-.695v-.044c-.003-1.064-.001-2.676 0-4.278.002-1.641.004-3.272 0-4.293v-.06c.005-.357.013-1.152.502-1.808.527-.707 1.323-.936 2.076-.984-2.6-5.094-7.897-8.581-14.007-8.581-6.109 0-11.406 3.487-14.006 8.581zm-.29 2.848c-2.253.005-4.276 1.943-4.276 4.285 0 2.346 2.029 4.286 4.286 4.286v-.006c.003-.99.001-2.617 0-4.242v-.005c-.002-1.674-.003-3.344 0-4.312v-.006h-.01zm28.591 0c2.254.005 4.276 1.943 4.276 4.285 0 2.346-2.028 4.286-4.286 4.286v-.006c-.002-.99-.001-2.62 0-4.247v-.012c.002-1.67.003-3.334 0-4.3v-.006h.01z"
+                        fill="#2188FF"
+                      ></path>
+                      <path
+                        d="M41.847 19.582a1.429 1.429 0 0 1 2.02-2.02l4.286 4.285a1.429 1.429 0 0 1 0 2.02l-4.286 4.286a1.429 1.429 0 0 1-2.02-2.02l3.275-3.275-3.275-3.276z"
+                        fill="#2188FF"
+                      ></path>
+                    </svg>
+
+                    <h3 class="h4-mktg">Talk to us</h3>
+                    <p class="f5 text-gray">Need help?</p>
+                  </div>
+                  <a
+                    class="btn-mktg btn-outline-mktg mb-1 d-block d-md-inline-block text-center mt-2 Bump-link"
+                    href="#"
+                    >Contact Sales <span class="Bump-link-symbol">→</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-7 py-md-8 py-lg-9">
+          <div class="container-lg p-responsive">
+            <p class="h00-mktg mt-3 mb-2 text-center">
+              What can you do with babyCRM?
+            </p>
+            <p class="lead-mktg text-gray text-center col-md-8 mx-auto mb-4">
+              From flexible hosting to granular access controls, we’ve got your
+              security requirements&nbsp;covered.
+            </p>
+
+            <div class="d-md-flex flex-items-center flex-row-reverse mt-6 mb-3">
+              <div class="col-md-6 mx-auto px-5 pr-md-0 text-center">
+                <img
+                  src="assets/images/home-illo-business.png"
+                  alt="Security and administration"
+                  class="width-fit mb-4"
+                />
+              </div>
+              <div class="col-md-6 mx-auto text-md-left f5 p-sm-6">
+                <h3 class="h3-mktg text-normal mb-1">Lorem ipsum #1</h3>
+                <p class="text-gray mb-3 mb-md-5">
+                  Prevent problems before they happen. Protected branches,
+                  signed commits, and required status checks protect your work
+                  and help you maintain a high standard for your code.
+                </p>
+                <h3 class="h3-mktg text-normal mb-1 mt-sm-6">Lorem ipsum #2</h3>
+                <p class="text-gray mb-3 mb-md-5">
+                  Encourage teams to work together while limiting access to
+                  those who need it with granular permissions and authentication
+                  through SAML/SSO and LDAP.
+                </p>
+                <h3 class="h3-mktg text-normal mb-1 mt-sm-6">Lorem ipsum #3</h3>
+                <p class="text-gray mb-3 mb-md-5">
+                  Encourage teams to work together while limiting access to
+                  those who need it with granular permissions and authentication
+                  through SAML/SSO and LDAP.
+                </p>
+                <h3 class="h3-mktg text-normal mb-1 mt-sm-6">Lorem ipsum #4</h3>
+
+                <p class="text-gray mb-3 mb-md-5">
+                  Encourage teams to work together while limiting access to
+                  those who need it with granular permissions and authentication
+                  through SAML/SSO and LDAP.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-7 py-md-8 py-lg-9 bg-gray-dark">
+          <div class="container-lg p-responsive text-white text-center">
+            <h2 class="h1-mktg text-normal">
+              Get started for free — join the millions of developers already
+              using babyCRM to share their code, work together, and build
+              amazing things.
+            </h2>
+          </div>
+          <div class="container-xl p-responsive py-6 mt-lg-6">
+            <form
+              class="home-hero-signup js-signup-form"
+              autocomplete="off"
+              aria-label="Sign up"
+              action=""
+              method="post"
+            >
+              <div
+                class="d-lg-flex flex-wrap flex-lg-nowrap d-flex flex-items-center flex-justify-center"
+              >
+                <div
+                  class="form-group col-12 col-sm-8 col-lg-3 -auto mt-0 mx-lg-0 mb-3 mb-lg-0 px-3"
+                >
+                  <dl class="m-0">
+                    <dt class="input-label">
+                      <label
+                        class="form-label text-white f5"
+                        for="user[email]-footer"
+                        >Email</label
+                      >
+                    </dt>
+                    <dd>
+                      <input
+                        type="text"
+                        name="user[email]"
+                        id="user[email]-footer"
+                        class="form-control form-control-lg input-block input-lg js-email-notice-trigger"
+                        placeholder="Your email address"
+                        autocomplete="off"
+                      />
+                    </dd>
+                  </dl>
+                </div>
+
+                <div
+                  class="col-12 col-sm-8 col-lg-3 mx-lg-0 mb-3 mb-lg-0 px-3 mt-4"
+                >
+                  <button
+                    class="btn-mktg btn-primary-mktg btn-block mt-n1"
+                    type="submit"
+                  >
+                    Subscribe to babyCRM
+                  </button>
+                </div>
+              </div>
+
+              <p class="form-control-note text-center mt-6">
+                By clicking “Sign up for babyCRM”, you agree to our
+                <a class="text-white" href="#" target="_blank"
+                  >terms of service</a
+                >
+                and
+                <a class="text-white" href="#" target="_blank"
+                  >privacy statement</a
+                >.
+                <span class="js-email-notice"
+                  >We’ll occasionally send you account related emails.</span
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="bg-gray-light">
+        <div
+          class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-row-reverse flex-items-center"
+        >
+          <ul
+            class="list-style-none d-flex flex-items-center mb-3 mb-sm-0 lh-condensed-ultra"
+          >
+            <li>
+              <a href="#" title="babyCRM on Linkedin" style="color: #959da5;">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 19 18"
+                  class="d-block"
+                  height="18"
+                >
+                  <path
+                    d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="list-style-none d-flex text-gray">
+            <li class="mr-3">© 2020 babyCRM.</li>
+            <li class="mr-3">
+              <a href="#" class="link-gray">Terms</a>
+            </li>
+            <li class="mr-3">
+              <a href="#" class="link-gray">Privacy</a>
+            </li>
+            <li>
+              <a href="#" class="link-gray">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".js-details-target").click(function(){
+          $(".js-details-container").toggleClass('open ')
+        })
+      })
+    </script>
+  </body>
+</html>
